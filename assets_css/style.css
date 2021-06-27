@@ -1,0 +1,388 @@
+/* RESET CSS */
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
+
+ html {
+     font-family: Arial, Helvetica, sans-serif;
+     scroll-behavior: smooth;
+ }
+
+ .row {
+     margin-left: -8px;
+     margin-right: -8px;
+ }
+
+ .row::after {
+     content: "";
+     display: block;
+     clear: both;
+ }
+
+.mt-8px {
+    margin-top: 8px !important ;
+}
+
+.mt-16px {
+    margin-top: 16px !important ;
+}
+
+ .col {
+     float: left;
+     padding-left: 8px;
+     padding-right: 8px;
+ }
+
+.col-full {
+    width: 100%;
+}
+
+.col-half{
+    width: 50%;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+#header .search-button {
+    float: right;
+    padding: 0 24px;
+}
+
+#header .search-icon {
+    color: white;
+    line-height: 46.4px;
+    font-size: 14px;
+}
+
+#header .search-button:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+#header {
+    background-color: #000;
+    height: 46.4px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav, .subnav {
+    list-style-type: none;
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+#nav li {  
+   position: relative;
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+
+#nav > li > a {
+    color: white;
+    text-transform: uppercase;
+}
+
+#nav li a {
+    text-decoration: none;
+    line-height: 46.4px;
+    padding: 0 24px;
+    display: block;
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover a {
+    color: #000;
+    background-color: #ccc;
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    color: #000;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+}
+
+#nav .subnav a {
+    padding: 14px;
+    color: #000;
+    line-height: 20px;
+}
+
+#nav .nav-arrow-down {
+    font-size: 14px;
+}
+
+#slider {
+    position: relative;
+    margin-top: 46.4px;
+    padding-top: 50%;
+    background-image: url(./img/slider5.png);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#slider .text-content{
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    left: 0;
+    right: 0;
+    bottom: 48px;
+}
+#slider .text_head{
+    font-weight: 500px;
+    font-size: 24px;
+}
+#slider .text_description{
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+#content .content-section {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 0;
+}
+
+#content .section-heading {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 4px;
+    margin: 10px 0;
+}
+
+#content .section-sub-heading {
+    font-size: 15px;
+    text-align: center;
+    margin: 15px 0;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+#content .about-text {
+    margin: 15px 0;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.4;
+    padding: 15px 0;
+}
+
+#content .member-list {
+    padding: 32px 0;
+    overflow: hidden;
+}
+
+#content .member-avatar {
+    width: 154px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+}
+
+#content .member-item {
+    float: left;
+    width: calc(100% / 3);
+    text-align: center;
+}
+
+#content .member-name{
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.tour-section {
+    background-color: #000;
+}
+
+.tour-section .content-section {
+    color: #fff;
+}
+
+.book-ticket {
+    background-color: #fff;
+    color: #000;
+    margin-top: 40px;
+    list-style-type: none;
+}
+
+.book-ticket li {
+    color: #757575;
+    font-size: 15px;
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.book-ticket .sold-out {
+    font-size: 15px;
+    color: #fff;
+    background-color: #f44336;
+    padding: 2px 4px;
+    margin-left: 8px;
+}
+
+.book-ticket .quantity {
+    height: 24px;
+    width: 24px;
+    background-color: black;
+    float: right;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-top: -2px;
+    color: #fff;
+}
+
+.place-list{
+    padding: 32px 8px;
+    overflow: hidden;
+    margin-right: -16px;
+    margin-left: -16px;
+}
+
+.place-items {
+    float: left;
+    width: calc(100% / 3);
+    padding: 0 8px;
+    margin-bottom: 16px;
+}
+
+.place-img {
+    display: block;
+    width: 100%;
+}
+
+.place-img:hover {
+    opacity: 0.6;
+}
+
+.place-body{
+    background-color: #fff;
+    padding: 16px;
+    font-size: 15px;
+}
+
+.place-heading{
+    color: #000;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.place-time{
+    color: #000;
+    opacity: 0.6;
+    margin: 16px 0;
+}
+
+.description{
+    color: #000;
+    margin: 16px 0;
+    line-height: 1.4;
+}
+
+.button {
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    margin-bottom: 16px;
+    padding: 8px 16px;
+    display: inline-block;
+}
+
+.button:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+.contact-content {
+    margin-top: 48px;
+}
+
+.contact-info {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact-info i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form {
+    font-size: 15px;
+}
+
+.contact-form .form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.contact-form .form-submit-button {
+    background-color: #000;
+    color: white;
+    border: 1px solid #000;
+    padding: 10px 16px;
+    float: right;
+}
+
+.contact-form .form-submit-button:hover {
+    color: #000;
+    background-color: #ccc;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.map-section img {
+    width: 100%;
+}
+
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+#footer .social {
+    font-size: 24px;
+}
+
+
+#footer .social a {
+    color: rgb(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+
+#footer .social a:hover {
+    color: rgb(0, 0, 0, 0.3);
+}
+
+#footer .copyright {
+    margin-top: 15px;
+    color: rgb(0, 0, 0, 0.6);
+}
+
+#footer .copyright a {
+    color: rgb(0, 0, 0, 0.6);
+    cursor: pointer;
+}
